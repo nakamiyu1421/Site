@@ -1,0 +1,109 @@
+/*フォント*/
+body {
+  font-family: "Georgia","Yu Mincho", sans-serif;
+}
+
+
+/*ヘッダー全体*/
+header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(238, 238, 238, 0.7);
+}
+
+/*左上ロゴ*/
+#logo{
+  width: 70%;
+}
+
+/*ナビ*/
+#nav{
+  font-size: 25px;
+  align-self: center;
+}
+
+#nav>a{
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+#nav>a:link{
+  color: rgb(39, 39, 39);
+}
+
+#nav>a:visited{
+  color: rgb(39, 39, 39);
+}
+
+#nav>a:hover{
+  color: rgb(39, 39, 39);
+  text-decoration: underline;
+}
+
+#nav>a:active{
+  color: rgb(39, 39, 39);
+}
+
+
+/*メイン全体*/
+/*店名トップ*/
+#top{
+  position: relative;
+  display: flex;
+}
+
+#name{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgb(238, 238, 238, 0.7);
+  border-radius: 60px;
+  height: 20%;
+}
+
+#name > p { 
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 23%;
+}
+
+.name_logo{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  width: 50%;
+}
+
+#sns{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgb(238, 238, 238, 0.7);
+  border-radius: 60px;
+  height: 5%;
+  width: 10%;
+}
+.x_logo{
+  width: 20%;
+  margin-bottom: 2%;
+  margin-left: 20%;
+}
+
+.insta_logo{
+  width: 25%;
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
+.name_background{
+  width: 100%;
+}

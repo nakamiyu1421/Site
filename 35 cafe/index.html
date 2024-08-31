@@ -5,14 +5,18 @@
   <title>35cafe</title>
   <meta charset="UTF-8">
   <meta name="description" contant="35cafeの説明">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
     <!--左上ロゴ-->
-    <a href="index.html"><img src="images/logo.png"  id="logo" alt="トップページに戻る"></a>
+    <div id="header_logo">
+      <a href="index.html"><img src="images/logo.png"  id="logo" alt="トップページに戻る"></a>
+      <a href="index.html"><img src="images/sns_logo/x_black.png" class="x_logo" alt="x"></a>
+      <a href="index.html"><img src="images/sns_logo/Instagram_Black.png" class="insta_logo" alt="insta"></a>
+    </div>
 
     <!--ナビ-->
     <nav id="nav">
@@ -26,16 +30,40 @@
   <main>
     <article>
       <!--店名＆ロゴ&sns-->
-      <section id="top">
-        <div id="name">
-          <img src="images/logo.png" class="name_logo" alt="店名">
-          <p>香り引き立つコーヒーとお食事で心安らぐひと時を。</p>
-        </div>
-        <div id="sns">
-          <a href="index.html"><img src="images/sns_logo/x_black.png" class="x_logo" alt="x"></a>
-          <a href="index.html"><img src="images/sns_logo/Instagram_Black.png" class="insta_logo" alt="insta"></a>
-        </div>
+      <section id="store_name">
         <img src="images/top.jpg" class="name_background" alt="コーヒーとデザート">
+        <div id="top">
+          <div class="name_logo">
+            <img src="images/logo.png" class="name_logo_img" alt="店名">
+          </div>
+          <div class="name_txt">
+            <p>香り引き立つコーヒーとお食事で<br>心安らぐひと時を。</p>
+          </div>
+        </div>
+      </section>
+
+      <!--concept-->
+      <section id="concept">
+        <h1>CONCEPT</h1><hr>
+
+        <div id="concept_all">
+          <div>
+            <img src="images/concept1.jpg" class="concept1_img" alt="テラス席">
+          </div>
+          <div>
+            <img src="images/concept2.jpg" class="concept2_img" alt="店内">
+          </div>            
+          <div class="concept1_txt">
+            <h2>開放感あふれるテラス席</h2>
+            <p>天気のいい日にはぜひテラス席も<br>ご利用くださいませ。</p>
+          </div>
+          <div class="concept2_txt">
+            <h2>西洋風のくつろぎ空間</h2>
+            <p>コーヒーのにおいあふれる店内で<br>おつくろぎいただけます。</p>
+          </div>
+        </div>
+
+
       </section>
 
     </article>

@@ -1,109 +1,389 @@
 /*フォント*/
 body {
   font-family: "Georgia","Yu Mincho", sans-serif;
+  margin: 0;
 }
 
 
-/*ヘッダー全体*/
-header {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  background-color: rgb(238, 238, 238, 0.7);
-}
-
-/*左上ロゴ*/
-#logo{
-  width: 70%;
-}
-
-/*ナビ*/
-#nav{
-  font-size: 25px;
-  align-self: center;
-}
-
-#nav>a{
-  text-decoration: none;
-  margin-right: 20px;
-}
-
-#nav>a:link{
-  color: rgb(39, 39, 39);
-}
-
-#nav>a:visited{
-  color: rgb(39, 39, 39);
-}
-
-#nav>a:hover{
-  color: rgb(39, 39, 39);
-  text-decoration: underline;
-}
-
-#nav>a:active{
-  color: rgb(39, 39, 39);
-}
+/*PC画面*/
+@media screen and (min-width: 768px) {
+  /*見出し*/
+  h1{
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 50px;
+    margin-left: 100px;
+  }
 
 
-/*メイン全体*/
-/*店名トップ*/
-#top{
-  position: relative;
-  display: flex;
+  /*ヘッダー全体*/
+  header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgb(238, 238, 238, 0.7);
+  }
+
+  /*左上ロゴ*/
+  #header_logo{
+    align-self: center;
+  }
+
+  #logo{
+    height: 50px;
+    margin-left: 20px;
+  }
+
+  .x_logo{
+    height: 30px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+
+  .insta_logo{
+    height: 30px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+
+  /*ナビ*/
+  #nav{
+    font-size: 25px;
+    align-self: center;
+  }
+
+  #nav>a{
+    text-decoration: none;
+    margin-right: 20px;
+  }
+
+  #nav>a:link{
+    color: rgb(39, 39, 39);
+  }
+
+  #nav>a:visited{
+    color: rgb(39, 39, 39);
+  }
+
+  #nav>a:hover{
+    color: rgb(39, 39, 39);
+    text-decoration: underline;
+  }
+
+  #nav>a:active{
+    color: rgb(39, 39, 39);
+  }
+
+
+  /*メイン全体*/
+  /*店名トップ*/
+  #store_name{
+    position: relative;
+  }
+
+  .name_background{
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+    display: flex;
+  }
+
+  #top{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(238, 238, 238, 0.7);
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+  }
+
+  .name_logo{
+    text-align: center;
+    margin: auto auto 0 auto;
+  }
+
+  .name_logo_img{
+    width: 200px;
+  }
+
+  .name_txt{
+    color: rgb(39, 39, 39);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto auto auto;
+  }
+
+  /*concept*/
+  #concept_all{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .concept1_img{
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    height: auto;
+    width: 30%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .concept1_txt{
+    position: absolute;
+    top: 100px;
+    left: 700px;
+    right: auto;
+    color: rgb(255, 255, 255);
+    background-color: rgba(66, 66, 66, 0.7);
+    border-radius: 20px;
+    height: auto;
+    width: 25%;
+    text-align: center;
+  }
+
+  .concept1_txt>h2{
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 20px;
+  }
+
+  .concept1_txt>p{
+    font-size: 25px;
+  }
+
+  .concept2_img{
+    position: absolute;
+    top: 350px;
+    right: 200px;
+    height: auto;
+    width: 30%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .concept2_txt{
+    position: absolute;
+    top: 900px;
+    right: 700px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(66, 66, 66, 0.7);
+    border-radius: 20px;
+    height: auto;
+    width: 500px;
+    text-align: center;
+  }
+
+  .concept2_txt>h2{
+    font-size:35px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 20px;
+  }
+
+  .concept2_txt>p{
+    font-size: 25px;
+  }
+
 }
 
-#name{
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  background-color: rgb(238, 238, 238, 0.7);
-  border-radius: 60px;
-  height: 20%;
-}
 
-#name > p { 
-  font-size: 30px;
-  font-weight: bold;
-  margin-top: 23%;
-}
+/*スマホ画面*/
+@media screen and (max-width: 767px) {
+  /*見出し*/
+  h1{
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 50px;
+    margin-left: 100px;
+  }
 
-.name_logo{
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
-  width: 50%;
-}
+  /*ヘッダー*/
+  header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgb(238, 238, 238, 0.7);
+  }
 
-#sns{
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  background-color: rgb(238, 238, 238, 0.7);
-  border-radius: 60px;
-  height: 5%;
-  width: 10%;
-}
-.x_logo{
-  width: 20%;
-  margin-bottom: 2%;
-  margin-left: 20%;
-}
+  /*左上ロゴ*/
+  #header_logo{
+    align-self: center;
+  }
 
-.insta_logo{
-  width: 25%;
-  margin-top: 5%;
-  margin-left: 15%;
-}
+  #logo{
+    height: 30px;
+    margin-left: 10px;
+  }
 
-.name_background{
-  width: 100%;
+  .x_logo{
+    height: 15px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+
+  .insta_logo{
+    height: 15px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+
+  /*ナビ*/
+  #nav{
+    font-size: 10px;
+    align-self: center;
+  }
+
+  #nav>a{
+    text-decoration: none;
+    margin-right: 5px;
+  }
+
+  #nav>a:link{
+    color: rgb(39, 39, 39);
+  }
+
+  #nav>a:visited{
+    color: rgb(39, 39, 39);
+  }
+
+  #nav>a:hover{
+    color: rgb(39, 39, 39);
+    text-decoration: underline;
+  }
+
+  #nav>a:active{
+    color: rgb(39, 39, 39);
+  }
+
+
+  /*メイン全体*/
+  /*店名トップ*/
+  #store_name{
+    position: relative;
+  }
+
+  .name_background{
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+  }
+
+  #top{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(238, 238, 238, 0.7);
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+  }
+
+  .name_logo{
+    text-align: center;
+    margin: auto auto 0 auto;
+  }
+
+  .name_logo_img{
+    width: 80px;
+  }
+
+  .name_txt{
+    color: rgb(39, 39, 39);
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto auto auto;
+  }
+
+  /*concept*/
+  #concept_all{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .concept1_img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .concept1_txt{
+    position: absolute;
+    top: 280px;
+    left: 100px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(66, 66, 66, 0.7);
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+  
+  .concept1_txt>h2{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 20px;
+  }
+  
+  .concept1_txt>p{
+    font-size: 10px;
+  }
+  
+  .concept2_img{
+    position: absolute;
+    top: 420px;
+    right: 10px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .concept2_txt{
+    position: absolute;
+    top: 450px;
+    right: 130px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(66, 66, 66, 0.7);
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+  
+  .concept2_txt>h2{
+    font-size:20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 20px;
+  }
+  
+  .concept2_txt>p{
+    font-size: 10px;
+  }
+
 }

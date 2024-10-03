@@ -7,6 +7,9 @@
   <meta name="description" contant="35cafeの説明">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 
 <body>
@@ -48,26 +51,111 @@
 
         <div id="concept_all">
           <div>
-            <img src="images/concept1.jpg" class="concept1_img" alt="テラス席">
+            <div>
+              <img src="images/concept1.jpg" class="concept1_img" alt="テラス席">
+            </div>
+            <div class="concept1_txt">
+              <h2>開放感あふれるテラス席</h2>
+              <p>天気のいい日にはぜひテラス席も<br>ご利用くださいませ。</p>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <img src="images/concept2.jpg" class="concept2_img" alt="店内">
+            </div>            
+            <div class="concept2_txt">
+              <h2>西洋風のくつろぎ空間</h2>
+              <p>コーヒーのにおいあふれる店内で<br>おつくろぎいただけます。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--カルーセル-->
+      <section id="concept_carousel">
+        <div class="carousel">
+          <div>
+            <img class="carouselimg" src="images/visual1.jpg">
           </div>
           <div>
-            <img src="images/concept2.jpg" class="concept2_img" alt="店内">
-          </div>            
-          <div class="concept1_txt">
-            <h2>開放感あふれるテラス席</h2>
-            <p>天気のいい日にはぜひテラス席も<br>ご利用くださいませ。</p>
+            <img class="carouselimg" src="images/visual2.jpg">
           </div>
-          <div class="concept2_txt">
-            <h2>西洋風のくつろぎ空間</h2>
-            <p>コーヒーのにおいあふれる店内で<br>おつくろぎいただけます。</p>
+          <div>
+            <img class="carouselimg" src="images/visual3.jpg">
+          </div>
+          <div>
+            <img class="carouselimg" src="images/visual4.jpg">
+          </div>
+        </div>
+      </section>
+
+      <!--menu-->
+      <section id="menu">
+        <br>
+        <h1>MENU</h1><hr>
+
+        <div id="menu_img">
+          <div id="food">
+            <a href="menu.html#food">
+            <div class="food_logo">
+              <img class="food_img" src="images/food.jpg">
+            </div>
+            <div class="food_txt">
+              <p>Food Menu</p>
+            </div>
+            </a>
+          </div>
+
+          <div id="drink">
+            <a href="menu.html#drink">
+            <div class="drink_logo">
+              <img class="drink_img" src="images/coffe.jpg">
+            </div>
+            <div class="drink_txt">
+              <p>Drink Menu</p>
+            </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--reservation-->
+      <section>
+        <br>
+        <h1>RESERVATION</h1><hr>
+
+        <div id="reservation">
+          <div id="call">
+            <img class="call_img" src="images/sns_logo/call.png">
+            <span>000-0000-0000</span>
+          </div>
+
+          <div id="web">
+            <a href="reservation.html">
+              <img class="web_img" src="images/sns_logo/web.png">
+            </a>
           </div>
         </div>
 
+      </section>
+
+
+
+      <!--access-->
+      <section id="access"></section>
+        <br>
+        <h1>ACCESS</h1><hr>
 
       </section>
 
+
     </article>
   </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="main.js"></script>
 
 </body>
 

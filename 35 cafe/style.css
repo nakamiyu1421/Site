@@ -6,7 +6,7 @@ body {
 
 
 /*PC画面*/
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   /*見出し*/
   h1{
     font-size: 50px;
@@ -123,91 +123,594 @@ body {
   }
 
   /*concept*/
+  #concept{
+    background-color: white;
+    width: 100%;
+    height: 1500px;
+  }
+
   #concept_all{
     position: relative;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
   }
 
   .concept1_img{
     position: absolute;
-    top: 30px;
-    left: 200px;
-    height: auto;
-    width: 30%;
+    top: 10px;
+    left: 100px;
+    height: 1000px;
     object-fit: cover;
     border-radius: 20px;
   }
-
+    
   .concept1_txt{
     position: absolute;
     top: 100px;
     left: 700px;
-    right: auto;
     color: rgb(255, 255, 255);
     background-color: rgba(66, 66, 66, 0.7);
     border-radius: 20px;
     height: auto;
-    width: 25%;
+    width: auto;
     text-align: center;
   }
-
+    
   .concept1_txt>h2{
-    font-size: 35px;
+    font-size: 40px;
     color: rgb(255, 255, 255);
     font-weight: bold;
     margin: 20px;
   }
-
+    
   .concept1_txt>p{
-    font-size: 25px;
+    font-size: 30px;
   }
-
+    
   .concept2_img{
     position: absolute;
-    top: 350px;
-    right: 200px;
-    height: auto;
-    width: 30%;
+    top: 420px;
+    right: 100px;
+    height: 1000px;
     object-fit: cover;
     border-radius: 20px;
   }
-
+    
   .concept2_txt{
     position: absolute;
-    top: 900px;
-    right: 700px;
+    top: 1000px;
+    right: 800px;
     color: rgb(255, 255, 255);
     background-color: rgba(66, 66, 66, 0.7);
     border-radius: 20px;
     height: auto;
-    width: 500px;
+    width: auto;
     text-align: center;
   }
-
+    
   .concept2_txt>h2{
-    font-size:35px;
+    font-size:40px;
     color: rgb(255, 255, 255);
     font-weight: bold;
     margin: 20px;
   }
-
+    
   .concept2_txt>p{
-    font-size: 25px;
+    font-size: 30px;
+  }
+
+  #concept_carousel{
+    width: 80%;
+    margin: 80px auto;
+  }
+
+  .carouselimg{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .slide-arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 60px;
+    opacity: 0.8;
+    object-fit: cover;
+  }
+
+  .prev-arrow {
+    left: 0;
+    z-index: 10;
+  }
+
+  .next-arrow {
+    right: 0;
+  }
+
+
+  /*menu*/
+  #menu_img{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #food{
+    position: relative;
+  }
+
+  .food_img{
+    margin-left: 100px;
+    margin-right: 10px;
+    width: 800px;
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+
+  .food_logo{
+    text-align: center;
+    margin: auto auto 0 auto;
+  }
+
+  .food_txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(39, 39, 39);
+    background-color: rgb(238, 238, 238, 0.7);
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+
+  .food_txt>p{
+    font-size: 70px;
+    margin: 50px;
+  }
+
+  #drink{
+    position: relative;
+  }
+
+  .drink_img{
+    margin-left: 10px;
+    margin-right: 100px;
+    width: 800px;
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+
+  .drink_logo{
+    text-align: center;
+    margin: auto auto 0 auto;
+  }
+
+  .drink_txt{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    color: rgb(39, 39, 39);
+    background-color: rgb(238, 238, 238, 0.7);
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+
+  .drink_txt>p{
+    font-size: 70px;
+    margin: 50px;
+  }
+
+
+  /*reservation*/
+  #call{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  #call>img{
+    height: 80px;
+    margin-left: 100px;
+    margin-top: 20px;
+  }
+
+  #call>span{
+    color: rgb(39, 39, 39);
+    font-weight: bold;
+    font-size: 60px;
+    margin-left: 30px;
+  }
+
+  #web{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .web_img{
+    height: 100px;
+    
   }
 
 }
 
 
-/*スマホ画面*/
-@media screen and (max-width: 767px) {
+/*タブレット画面*/
+@media only screen and (min-width:479px) and (max-width:1199px) {
   /*見出し*/
   h1{
-    font-size: 50px;
+    font-size: 35px;
     margin-bottom: 0;
     margin-top: 50px;
+    margin-left: 30px;
+  }
+  
+  /*ヘッダー*/
+  header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgb(238, 238, 238, 0.7);
+  }
+  
+  /*左上ロゴ*/
+  #header_logo{
+    align-self: center;
+  }
+  
+  #logo{
+    height: 40px;
+    margin-left: 10px;
+  }
+  
+  .x_logo{
+    height: 30px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .insta_logo{
+    height: 30px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+  }
+  
+  /*ナビ*/
+  #nav{
+    font-size: 20px;
+    align-self: center;
+  }
+  
+  #nav>a{
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  #nav>a:link{
+    color: rgb(39, 39, 39);
+  }
+  
+  #nav>a:visited{
+    color: rgb(39, 39, 39);
+  }
+  
+  #nav>a:hover{
+    color: rgb(39, 39, 39);
+    text-decoration: underline;
+  }
+  
+  #nav>a:active{
+    color: rgb(39, 39, 39);
+  }
+  
+
+  /*メイン全体*/
+  /*店名トップ*/
+  #store_name{
+    position: relative;
+  }
+  
+  .name_background{
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+  }
+  
+  #top{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(238, 238, 238, 0.7);
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+  }
+  
+  .name_logo{
+    text-align: center;
+    margin: auto auto 0 auto;
+  }
+  
+  .name_logo_img{
+    width: 110px;
+  }
+  
+  .name_txt{
+    color: rgb(39, 39, 39);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto auto auto;
+  }
+  
+  /*concept*/
+  #concept{
+    background-color: white;
+    width: 100%;
+    height: 1100px;
+  }
+
+  #concept_all{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+    
+  .concept1_img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+    
+  .concept1_txt{
+    position: absolute;
+    top: 100px;
+    left: 350px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(66, 66, 66, 0.7);
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+    
+  .concept1_txt>h2{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 20px;
+  }
+    
+  .concept1_txt>p{
+    font-size: 20px;
+  }
+    
+  .concept2_img{
+    position: absolute;
+    top: 420px;
+    right: 10px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+    
+  .concept2_txt{
+    position: absolute;
+    top: 800px;
+    right: 300px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(66, 66, 66, 0.7);
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+    
+  .concept2_txt>h2{
+    font-size:30px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 20px;
+  }
+    
+  .concept2_txt>p{
+    font-size: 20px;
+  }
+
+  #concept_carousel{
+    width: 90%;
+    margin: 80px auto;
+  }
+  
+  .carouselimg{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .slide-arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 60px;
+    opacity: 0.8;
+  }
+
+  .prev-arrow {
+    left: 0;
+    z-index: 10;
+  }
+
+  .next-arrow {
+    right: 0;
+  }
+
+
+  /*menu*/
+  #menu_img{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  #food{
+    position: relative;
+  }
+  
+  .food_img{
+    margin-left: 40px;
+    margin-right: 10px;
+    width: 500px;
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+  
+  .food_logo{
+    text-align: center;
+    margin: auto auto 0 auto;
+  }
+  
+  .food_txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(39, 39, 39);
+    background-color: rgb(238, 238, 238, 0.7);
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+  
+  .food_txt>p{
+    font-size: 40px;
+    margin: 30px;
+  }
+  
+  #drink{
+    position: relative;
+  }
+  
+  .drink_img{
+    margin-left: 10px;
+    margin-right: 40px;
+    width: 500px;
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+  
+  .drink_logo{
+    text-align: center;
+    margin: auto auto 0 auto;
+  }
+  
+  .drink_txt{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    color: rgb(39, 39, 39);
+    background-color: rgb(238, 238, 238, 0.7);
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+  
+  .drink_txt>p{
+    font-size: 40px;
+    margin: 30px;
+  }
+  
+    /*reservation*/
+  #call{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  #call>img{
+    height: 80px;
     margin-left: 100px;
+    margin-top: 20px;
+  }
+
+  #call>span{
+    color: rgb(39, 39, 39);
+    font-weight: bold;
+    font-size: 60px;
+    margin-left: 30px;
+  }
+
+  #web{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  /*reservation*/
+  #call{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  #call>img{
+    height: 50px;
+  }
+
+  #call>span{
+    color: rgb(39, 39, 39);
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 10px;
+  }
+
+  #web{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .web_img{
+    height: 70px;
+  }
+}
+
+/*スマホ画面*/
+@media only screen and (max-width: 479px) {
+  /*見出し*/
+  h1{
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-top: 50px;
+    margin-left: 50px;
   }
 
   /*ヘッダー*/
@@ -316,6 +819,12 @@ body {
   }
 
   /*concept*/
+  #concept{
+    background-color: white;
+    width: 100%;
+    height: 900px;
+  }
+
   #concept_all{
     position: relative;
     display: flex;
@@ -386,4 +895,139 @@ body {
     font-size: 10px;
   }
 
+  #concept_carousel{
+    width: 90%;
+    margin: 80px auto;
+  }
+
+  .carouselimg{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .slide-arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 40px;
+    opacity: 0.8;
+  }
+
+  .prev-arrow {
+    left: 0;
+    z-index: 10;
+  }
+
+  .next-arrow {
+    right: 0;
+  }
+
+
+  /*menu*/
+  #menu_img{
+    display: block;
+    flex-wrap: wrap;
+  }
+  
+  #food{
+    position: relative;
+  }
+  
+  .food_img{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 350px;
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+  
+  .food_logo{
+    text-align: center;
+    margin: auto auto 0 auto;
+  }
+  
+  .food_txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(39, 39, 39);
+    background-color: rgb(238, 238, 238, 0.7);
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+  
+  .food_txt>p{
+    font-size: 30px;
+    margin: 10px;
+  }
+  
+  #drink{
+    position: relative;
+  }
+  
+  .drink_img{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 350px;
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+  
+  .drink_logo{
+    text-align: center;
+    margin: auto auto 0 auto;
+  }
+  
+  .drink_txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(39, 39, 39);
+    background-color: rgb(238, 238, 238, 0.7);
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+  
+  .drink_txt>p{
+    font-size: 30px;
+    margin: 10px;
+  }
+
+  /*reservation*/
+  #call{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  #call>img{
+    height: 50px;
+  }
+
+  #call>span{
+    color: rgb(39, 39, 39);
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 10px;
+  }
+
+  #web{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .web_img{
+    height: 70px;
+  }
 }

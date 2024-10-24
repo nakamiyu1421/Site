@@ -305,6 +305,15 @@ body {
     margin: 50px;
   }
 
+  /*menu(html)*/
+  #menu_all{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+    margin-top: 50px;
+  }
+
 
   /*reservation*/
   #call{
@@ -337,7 +346,68 @@ body {
 
   .web_img{
     height: 100px;
-    
+  }
+
+  /*access*/
+  #access{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .access_head{
+    font-size: 30px;
+    border-bottom: solid 2px;
+  }
+
+  .map{
+    padding-left: 200px;
+  }
+
+  /*footer*/
+  footer{
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+    padding: 20px 80px 30px 80px;
+    margin-top: 100px;
+  }
+
+  .footer-logo{
+    width: 150px;
+    margin-top: 10px;
+  }
+
+  #footer-link{
+    font-size: 25px;
+    align-self: center;
+    margin-top: 50px;
+  }
+
+  #footer-link>a{
+    text-decoration: none;
+    margin-right: 20px;
+  }
+
+  #footer-link>a:link{
+    color: rgb(39, 39, 39);
+  }
+
+  #footer-link>a:visited{
+    color: rgb(39, 39, 39);
+  }
+
+  #footer-link>a:hover{
+    color: rgb(39, 39, 39);
+    text-decoration: underline;
+  }
+
+  #footer-link>a:active{
+    color: rgb(39, 39, 39);
+  }
+
+  #copyright{
+    margin-top: 50px;
   }
 
 }
@@ -640,6 +710,15 @@ body {
     font-size: 40px;
     margin: 30px;
   }
+
+  /*menu(html)*/
+  #menu_all{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+    margin-top: 50px;
+  }
   
     /*reservation*/
   #call{
@@ -701,6 +780,70 @@ body {
   .web_img{
     height: 70px;
   }
+
+  /*access*/
+  #access{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .access_head{
+    font-size: 30px;
+    border-bottom: solid 2px;
+  }
+  
+  .map{
+    padding-left: 50px;
+  }
+
+  /*footer*/
+  footer{
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+    padding: 20px 80px 30px 80px;
+    margin-top: 100px;
+  }
+
+  .footer-logo{
+    width: 150px;
+    margin-top: 10px;
+  }
+
+  #footer-link{
+    font-size: 25px;
+    align-self: center;
+    margin-top: 50px;
+  }
+
+  #footer-link>a{
+    text-decoration: none;
+    margin-right: 20px;
+  }
+
+  #footer-link>a:link{
+    color: rgb(39, 39, 39);
+  }
+
+  #footer-link>a:visited{
+    color: rgb(39, 39, 39);
+  }
+
+  #footer-link>a:hover{
+    color: rgb(39, 39, 39);
+    text-decoration: underline;
+  }
+
+  #footer-link>a:active{
+    color: rgb(39, 39, 39);
+  }
+
+  #copyright{
+    margin-top: 50px;
+  }
+
 }
 
 /*スマホ画面*/
@@ -1000,6 +1143,15 @@ body {
     margin: 10px;
   }
 
+  /*menu(html)*/
+  #menu_all{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+    margin-top: 50px;
+  }
+
   /*reservation*/
   #call{
     position: relative;
@@ -1030,4 +1182,71 @@ body {
   .web_img{
     height: 70px;
   }
+
+  /*access*/
+  #access{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .access_head{
+    font-size: 25px;
+    border-bottom: solid 2px;
+  }
+  
+  .map{
+    padding-left: 50px;
+  }
+
+  /*footer*/
+  footer{
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+    padding: 20px 80px 30px 80px;
+    margin-top: 100px;
+
+  }
+
+  .footer-logo{
+    width: 150px;
+    margin-top: 10px;
+  }
+
+  #footer-link{
+    font-size: 25px;
+    align-self: center;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #footer-link>a{
+    text-decoration: none;
+    margin-right: 20px;
+  }
+
+  #footer-link>a:link{
+    color: rgb(39, 39, 39);
+  }
+
+  #footer-link>a:visited{
+    color: rgb(39, 39, 39);
+  }
+
+  #footer-link>a:hover{
+    color: rgb(39, 39, 39);
+    text-decoration: underline;
+  }
+
+  #footer-link>a:active{
+    color: rgb(39, 39, 39);
+  }
+
+  #copyright{
+    margin-top: 50px;
+  }
+
 }
